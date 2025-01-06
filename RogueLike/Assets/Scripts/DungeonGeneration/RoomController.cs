@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class  RoomInfo
+public class RoomInfo
 {
     public string name;
     public int X;
@@ -16,25 +16,18 @@ public class RoomController : MonoBehaviour
 
     string currentWorldName = "Basement";
     RoomInfo currentLoadRoomData;
+    Room currentRoom;
     Queue<RoomInfo> loadRoomQueue = new Queue<RoomInfo>();
     public List<Room> loadedRooms = new List<Room> ();
     bool isLoadingRoom = false;
+    
 
-    private void Awake()
+    void Awake()
     {
         instance = this;
     }
 
-    private void Start()
-    {
-        LoadRoom("Start", 0, 0);
-        LoadRoom("Empty", 1, 0);
-        LoadRoom("Empty", 0, 1);
-        LoadRoom("Empty", -1, 0);
-        LoadRoom("Empty", 0, -1);
-    }
-
-    private void Update()
+    void Update()
     {
         UpdateRoomQueue();
     }
@@ -80,19 +73,53 @@ public class RoomController : MonoBehaviour
 
     public void RegisterRoom(Room room)
     {
-        room.transform.position = new Vector3 (currentLoadRoomData.X * room.Width, currentLoadRoomData.Y * room.Height, 0);
-        room.X = currentLoadRoomData.X;
-        room.Y = currentLoadRoomData.Y;
-        room.name = currentWorldName + "-" + currentLoadRoomData.name + " " + room.X + ", " + room.Y;
-        room.transform.parent = transform;
+        if (!DoesRoomExist(currentLoadRoomData.X, currentLoadRoomData.Y))
+        {
+            room.transform.position = new Vector3(currentLoadRoomData.X * room.Width, currentLoadRoomData.Y * room.Height, 0);
+            room.X = currentLoadRoomData.X;
+            room.Y = currentLoadRoomData.Y;
+            room.name = currentWorldName + "-" + currentLoadRoomData.name + " " + room.X + ", " + room.Y;
+            room.transform.parent = transform;
 
-        isLoadingRoom = false;
-        loadedRooms.Add (room);
+            isLoadingRoom = false;
+            if (loadedRooms.Count == 0)
+            {
+                CameraController.instance.currentRoom = room;
+            }
+            loadedRooms.Add(room);
+            room.RemoveUnconnectedDoors();
+        }
+        else
+        {
+            Destroy(room.gameObject);
+            isLoadingRoom = false;
+        }
     }
 
     public bool DoesRoomExist(int x, int y)
     {
         return loadedRooms.Find(item => item.X == x && item.Y == y) != null;
     }
- 
+
+    public Room FindRoom(int x, int y)
+    {
+        return loadedRooms.Find(item => item.X == x && item.Y == y);
+    }
+
+    public string GetRandomRoomName()
+    {
+        //Se deben poner todos los prefabs de salas que generes en total
+        string[] possibleRooms = new string[]
+        {
+            "Empty"
+            //"Basic1"
+        };
+        return possibleRooms[Random.Range(0, possibleRooms.Length)];
+    }
+
+    public void OnPlayerEnterRoom(Room room)
+    {
+        CameraController.instance.currentRoom = room;
+        currentRoom = room; 
+    }
 }

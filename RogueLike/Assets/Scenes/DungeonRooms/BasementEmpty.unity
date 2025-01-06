@@ -133,7 +133,52 @@ PrefabInstance:
     - target: {fileID: 3748844804812135094, guid: 76de9a35c992a934a8d886f30755cf5f,
         type: 3}
       propertyPath: m_Name
-      value: Sala1
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776904320605357907, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709229939030866497, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725678032691832859, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      propertyPath: grid.verticalOffset
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725678032691832859, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      propertyPath: grid.horizontalOffset
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809333579950452018, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 17.46693
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809333579950452018, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 6.9791074
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809333579950452018, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809333579950452018, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.5061691
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980975454813368415, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9221754168791028081, guid: 76de9a35c992a934a8d886f30755cf5f,
         type: 3}
@@ -188,103 +233,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3748844804812135094, guid: 76de9a35c992a934a8d886f30755cf5f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 201799614}
   m_SourcePrefab: {fileID: 100100000, guid: 76de9a35c992a934a8d886f30755cf5f, type: 3}
---- !u!1 &1355164333
+--- !u!1 &201799612 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3748844804812135094, guid: 76de9a35c992a934a8d886f30755cf5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 201799611}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1355164336}
-  - component: {fileID: 1355164335}
-  - component: {fileID: 1355164334}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1355164334
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &201799613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4725678032691832859, guid: 76de9a35c992a934a8d886f30755cf5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 201799611}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355164333}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
---- !u!20 &1355164335
-Camera:
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f876a80361af934aa40ec5eaf78bb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &201799614
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355164333}
+  m_GameObject: {fileID: 201799612}
   m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 5.0502553
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 0
-  m_HDR: 1
-  m_AllowMSAA: 0
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 0
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1355164336
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355164333}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.41, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473d932a8cdfe7c4d8688823455c768d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 201799613}
+  spawnerData:
+  - name: Mushroom
+    spawnerData: {fileID: 11400000, guid: 0e81830744957454784cdee5e46bba82, type: 2}
+  - name: Torret
+    spawnerData: {fileID: 11400000, guid: 9962e74dca965414da1ed32836f96c32, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 201799611}
-  - {fileID: 1355164336}
