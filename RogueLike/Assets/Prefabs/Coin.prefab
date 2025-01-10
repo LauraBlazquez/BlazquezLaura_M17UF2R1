@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6091666670043459349}
   - component: {fileID: 7914905847453058642}
+  - component: {fileID: 1656913863794552805}
   - component: {fileID: 8618918633174973301}
+  - component: {fileID: 8574793131867598859}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -85,6 +87,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1656913863794552805
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7257541643326524197}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.010938972}
+  serializedVersion: 2
+  m_Radius: 1.2909387
 --- !u!95 &8618918633174973301
 Animator:
   serializedVersion: 5
@@ -106,3 +143,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8574793131867598859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7257541643326524197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b696ce57d7f83ca4c9a724433bd896c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  price: 1
+  description: 
+  photo: {fileID: 1136277695, guid: fc2d2ec98118e5546a8bd1cddf6a9cdc, type: 3}
