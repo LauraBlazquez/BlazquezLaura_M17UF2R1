@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 9160933285244147937}
   - component: {fileID: 2327914167943899866}
   m_Layer: 5
-  m_Name: Pedido
+  m_Name: Order
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

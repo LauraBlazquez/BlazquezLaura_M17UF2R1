@@ -7,6 +7,7 @@ public class Room : MonoBehaviour
 {
     public int Width, Height, X, Y;
     public Door up, left, down, right;
+    private List<Flower> order = new List<Flower>();
     public List<Door> doors = new List<Door>();
 
     void Start()
@@ -37,6 +38,7 @@ public class Room : MonoBehaviour
             }
         }
         RoomController.instance.RegisterRoom(this);
+        GenerateOrder();
     }
 
     public void RemoveUnconnectedDoors()
@@ -63,6 +65,11 @@ public class Room : MonoBehaviour
             if (GetRoomByDoor(posX, posY) == null)
                 door.gameObject.SetActive(false);
         }
+    }
+
+    void GenerateOrder()
+    {
+        
     }
 
     public Room GetRoomByDoor(int posX, int posY)
