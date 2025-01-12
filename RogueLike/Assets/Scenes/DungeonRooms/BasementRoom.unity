@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &201799611
+--- !u!1001 &443620941
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -134,51 +134,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room
-      objectReference: {fileID: 0}
-    - target: {fileID: 3776904320605357907, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4709229939030866497, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4725678032691832859, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      propertyPath: grid.verticalOffset
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4725678032691832859, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      propertyPath: grid.horizontalOffset
-      value: 9.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809333579950452018, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 17.46693
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809333579950452018, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 6.9791074
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809333579950452018, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809333579950452018, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      propertyPath: m_Center.y
-      value: -0.5061691
-      objectReference: {fileID: 0}
-    - target: {fileID: 5980975454813368415, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9221754168791028081, guid: 76de9a35c992a934a8d886f30755cf5f,
         type: 3}
@@ -233,50 +188,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3748844804812135094, guid: 76de9a35c992a934a8d886f30755cf5f,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 201799614}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76de9a35c992a934a8d886f30755cf5f, type: 3}
---- !u!1 &201799612 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3748844804812135094, guid: 76de9a35c992a934a8d886f30755cf5f,
-    type: 3}
-  m_PrefabInstance: {fileID: 201799611}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &201799613 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4725678032691832859, guid: 76de9a35c992a934a8d886f30755cf5f,
-    type: 3}
-  m_PrefabInstance: {fileID: 201799611}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f876a80361af934aa40ec5eaf78bb42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &201799614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201799612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 473d932a8cdfe7c4d8688823455c768d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid: {fileID: 201799613}
-  spawnerData:
-  - name: Mushroom
-    spawnerData: {fileID: 11400000, guid: 0e81830744957454784cdee5e46bba82, type: 2}
-  - name: Torret
-    spawnerData: {fileID: 11400000, guid: 9962e74dca965414da1ed32836f96c32, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 201799611}
+  - {fileID: 443620941}

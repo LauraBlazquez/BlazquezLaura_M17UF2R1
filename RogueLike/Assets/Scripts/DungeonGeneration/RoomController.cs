@@ -111,8 +111,9 @@ public class RoomController : MonoBehaviour
         //Se deben poner todos los prefabs de salas que generes en total
         string[] possibleRooms = new string[]
         {
-            "Empty"
-            //"Basic1"
+            "Start",
+            "Room",
+            "Shop"             
         };
         return possibleRooms[Random.Range(0, possibleRooms.Length)];
     }
