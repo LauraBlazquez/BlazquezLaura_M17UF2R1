@@ -100,10 +100,10 @@ TextureImporter:
       name: Herbicida_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 322
-        width: 49
-        height: 60
+        x: 0
+        y: 321.66666
+        width: 66
+        height: 64.333336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: Herbicida_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 258
-        width: 49
-        height: 58
+        x: 0
+        y: 257.66666
+        width: 66
+        height: 64.333336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +142,10 @@ TextureImporter:
       name: Herbicida_2
       rect:
         serializedVersion: 2
-        x: 6
-        y: 194
-        width: 49
-        height: 56
+        x: 0
+        y: 193.66666
+        width: 66
+        height: 64.333336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: Herbicida_3
       rect:
         serializedVersion: 2
-        x: 6
-        y: 130
-        width: 49
-        height: 54
+        x: 0
+        y: 129.66666
+        width: 66
+        height: 64.333336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: Herbicida_4
       rect:
         serializedVersion: 2
-        x: 6
-        y: 66
-        width: 49
-        height: 52
+        x: 0
+        y: 65.666664
+        width: 66
+        height: 64.333336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: Herbicida_5
       rect:
         serializedVersion: 2
-        x: 6
-        y: 2
-        width: 49
-        height: 49
+        x: 0
+        y: 1.6666641
+        width: 66
+        height: 64.333336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
