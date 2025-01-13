@@ -7,6 +7,7 @@ public class PlayerController : AEntity, ICollectable, InputControllers.IPlayerA
     Rigidbody2D rigidbody;
     Animator animator;
     private Vector2 direction;
+    private InputControllers controls;
     public float idleTime = 3f;
     private float timer = 0;
     public Text coinCollectorText;
@@ -18,23 +19,33 @@ public class PlayerController : AEntity, ICollectable, InputControllers.IPlayerA
     {
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        controls = new InputControllers();
+        controls.Enable();
     }
 
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        if(rigidbody.velocity.x > 0)
-        { 
-            animator.SetBool("isWalking", true);
-        }
-        else
+        direction = controls.Player.Movement.ReadValue<Vector2>();
+        animator.SetFloat("X", direction.x);
+        animator.SetFloat("Y", direction.y);
+        if(direction.x > 0)
         {
-            animator.SetBool("isWalking", false);
+            transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
+        }
+        else if(direction.x < 0)
+        {
+            transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
+        }
+        if (direction.y > 0)
+        {
+            transform.localScale = new Vector2(transform.localScale.x, -Mathf.Abs(transform.localScale.y));
+        }
+        else if (direction.y < 0)
+        {
+            transform.localScale = new Vector2(transform.localScale.x, Mathf.Abs(transform.localScale.y));
         }
         IsAsleep();
-        rigidbody.velocity = direction * speed;
+        transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
         //coinCollectorText.text = coinCollector.ToString();
     }
 
