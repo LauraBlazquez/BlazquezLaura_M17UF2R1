@@ -122,38 +122,5 @@ public class RoomController : MonoBehaviour
     {
         CameraController.instance.currentRoom = room;
         currentRoom = room;
-
-        UpdatedRooms();
-    }
-
-    private void UpdatedRooms()
-    {
-        foreach (Room room in loadedRooms)
-        {
-            if(currentRoom != room)
-            {
-                EnemyController[] enemies = room.GetComponentsInChildren<EnemyController>();
-                if(enemies != null)
-                {
-                    foreach(EnemyController enemy in enemies)
-                    {
-                        enemy.notInRoom = true;
-                        Debug.Log("Not in room");
-                    }
-                }
-            }
-            else
-            {
-                EnemyController[] enemies = room.GetComponensInChildren<EnemyController>();
-                if (enemies != null)
-                {
-                    foreach (EnemyController enemy in enemies)
-                    {
-                        enemy.notInRoom = false;
-                        Debug.Log("In room");
-                    }
-                }
-            }
-        }
     }
 }

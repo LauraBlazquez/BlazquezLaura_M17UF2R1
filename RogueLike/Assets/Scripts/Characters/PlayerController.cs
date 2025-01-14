@@ -8,7 +8,7 @@ public class PlayerController : AEntity, ICollectable, InputControllers.IPlayerA
     Animator animator;
     private Vector2 direction;
     private InputControllers controls;
-    public float idleTime = 3f;
+    public float idleTime = 0.3f;
     private float timer = 0;
     public Text coinCollectorText;
     public static int coinCollector = 0;
@@ -30,33 +30,39 @@ public class PlayerController : AEntity, ICollectable, InputControllers.IPlayerA
         animator.SetFloat("Y", direction.y);
         if(direction.x > 0)
         {
-            transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
+            transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
         else if(direction.x < 0)
         {
-            transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
-        }
-        if (direction.y > 0)
-        {
-            transform.localScale = new Vector2(transform.localScale.x, -Mathf.Abs(transform.localScale.y));
-        }
-        else if (direction.y < 0)
-        {
-            transform.localScale = new Vector2(transform.localScale.x, Mathf.Abs(transform.localScale.y));
+            transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
         IsAsleep();
+        IsWalking();
         transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
         //coinCollectorText.text = coinCollector.ToString();
     }
 
+    void IsWalking()
+    {
+        if (direction.x == 0 && direction.y == 0)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            animator.SetBool("isWalking", true);
+        }
+    }
+
     void IsAsleep()
     {
-        if(animator.GetCurrentAnimatorStateInfo(0).IsName("IdleBlendTree"))
+        Debug.Log(timer);
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle Blend Tree"))
         {
             timer += Time.deltaTime;
             if(timer >= idleTime)
             {
-                animator.SetTrigger("Asleep");
+                animator.SetTrigger("isAsleep");
                 timer = 0;
             }
         }
