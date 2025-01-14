@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8198601089468779013}
   - component: {fileID: 7962749152253704337}
   - component: {fileID: 6375009971345499609}
+  - component: {fileID: 6436090139175779690}
   - component: {fileID: 7465648182483273482}
   - component: {fileID: 7182815417197113944}
   m_Layer: 0
@@ -30,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 7890193705207119893}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.07, z: 0}
-  m_LocalScale: {x: 0.4131, y: 0.4131, z: 0.4131}
+  m_LocalPosition: {x: -4.01, y: -1.4127638, z: 0}
+  m_LocalScale: {x: 0.5189775, y: 0.5189775, z: 0.5189775}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: -766656443
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 188349761, guid: 6ea0f727084726c4889a3dd5f6f94979, type: 3}
+  m_Sprite: {fileID: -739157702, guid: 6ea0f727084726c4889a3dd5f6f94979, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.94, y: 2.43}
+  m_Size: {x: 1.94, y: 2.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -151,8 +152,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.94, y: 2.43}
-    newSize: {x: 1.94, y: 2.43}
+    oldSize: {x: 1.94, y: 2.63}
+    newSize: {x: 1.94, y: 2.63}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -160,6 +161,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.94, y: 2.43}
   m_EdgeRadius: 0
+--- !u!58 &6436090139175779690
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890193705207119893}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.018515963, y: 0.004339553}
+  serializedVersion: 2
+  m_Radius: 5.9745584
 --- !u!95 &7465648182483273482
 Animator:
   serializedVersion: 5
@@ -173,7 +209,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 9f5ae9ee623cac44e82bc361eeefa141, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -193,8 +229,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68d9139869fb61488e3bb8876ea87de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
-  range: 10
-  attackRange: 0
-  speed: 2
-  notInRoom: 0
+  animator: {fileID: 0}
