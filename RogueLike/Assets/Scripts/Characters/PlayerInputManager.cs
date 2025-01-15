@@ -21,10 +21,7 @@ public class PlayerInputManager : MonoBehaviour, InputControllers.IPlayerActions
     }
     public void OnMovement(InputAction.CallbackContext context)
     {
-        if (context.performed)
-            Debug.Log("Assignem al animator i la direcció del player" + context.ReadValue<Vector2>());
-        else if (context.canceled)
-            Debug.Log("Assginem a la direcció del player" + context.ReadValue<Vector2>());
+        throw new System.NotImplementedException();
     }
 
     public void OnNewaction(InputAction.CallbackContext context)

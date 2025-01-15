@@ -7,16 +7,17 @@ public class ChaseState : StatesSO
 {
     public override void OnStateEnter(EnemyController ec)
     {
-        throw new System.NotImplementedException();
+        ec.animator.SetBool("isWalking", true);
     }
 
     public override void OnStateExit(EnemyController ec)
     {
-        //ec.GetComponent<ChaseBehaviour>().StopChasing();
+        ec.animator.SetBool("isWalking", false);
+        ec.GetComponent<ChaseBehaviour>().StopChasing();
     }
 
     public override void OnStateUpdate(EnemyController ec)
     {
-        //ec.GetComponent<ChaseBehaviour>().Chase(ec.target.transform, ec.transform);
+        ec.GetComponent<ChaseBehaviour>().Chase(ec.target.transform, ec.transform);
     }
 }

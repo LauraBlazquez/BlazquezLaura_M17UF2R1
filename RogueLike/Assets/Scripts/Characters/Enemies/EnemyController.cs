@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public StatesSO CurrentState;
     public int HP;
     public GameObject target;
-    //private ChaseBehaviour chaseB;
     public Animator animator;
 
     private void Start()
@@ -18,16 +18,46 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            animator.SetTrigger("Spawned");
+            target = collision.gameObject;
+        }
+        GoToState<ChaseState>();
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GoToState<IdleState>();
+        target = null;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GoToState<AttackState>();
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        GoToState<ChaseState>();
+    }
+
+    public void CheckIfAlive()
+    {
+        if(HP <= 0)
+        {
+            GoToState<DieState>();
         }
     }
 
+    private void Update()
+    {
+        CheckIfAlive();
+        CurrentState.OnStateUpdate(this);
+    }
     public void GoToState<T>() where T : StatesSO
     {
-        if (CurrentState.StatesToGo.Find(StatesSO => StatesSO is T))
+        if (CurrentState.statesToGo.Find(StatesSO => StatesSO is T))
         {
             CurrentState.OnStateExit(this);
-            CurrentState = CurrentState.StatesToGo.Find(obj => obj is T);
+            CurrentState = CurrentState.statesToGo.Find(obj => obj is T);
             CurrentState.OnStateEnter(this);
         }
     }

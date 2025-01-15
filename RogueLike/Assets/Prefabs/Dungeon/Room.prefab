@@ -446,8 +446,8 @@ MonoBehaviour:
   grid:
     columns: 0
     rows: 0
-    verticalOffset: 0
-    horizontalOffset: 0
+    verticalOffset: 4.4
+    horizontalOffset: 9.4
   gridTile: {fileID: 8032479168900106315, guid: e888c2c998da39846916ac9189b22034,
     type: 3}
   availablePoints: []
@@ -826,6 +826,7 @@ GameObject:
   - component: {fileID: 4346433130150194225}
   - component: {fileID: 5809333579950452018}
   - component: {fileID: 1941478067855890996}
+  - component: {fileID: 1599165410917888942}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -907,6 +908,24 @@ MonoBehaviour:
   down: {fileID: 0}
   right: {fileID: 0}
   doors: []
+--- !u!114 &1599165410917888942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748844804812135094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473d932a8cdfe7c4d8688823455c768d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 4725678032691832859}
+  spawnerData:
+  - name: Mushroom
+    spawnerData: {fileID: 11400000, guid: 0e81830744957454784cdee5e46bba82, type: 2}
+  - name: Sunflower
+    spawnerData: {fileID: 11400000, guid: 9962e74dca965414da1ed32836f96c32, type: 2}
 --- !u!1 &5160191924550832669
 GameObject:
   m_ObjectHideFlags: 0

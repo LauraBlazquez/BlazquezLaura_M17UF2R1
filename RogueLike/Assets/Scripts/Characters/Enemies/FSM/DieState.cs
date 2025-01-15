@@ -7,12 +7,12 @@ public class DieState : StatesSO
 {
     public override void OnStateEnter(EnemyController ec)
     {
-        throw new System.NotImplementedException();
+        ec.animator.SetBool("isDead",true);
+        Destroy(ec.gameObject);
     }
 
     public override void OnStateExit(EnemyController ec)
     {
-        throw new System.NotImplementedException();
     }
 
     public override void OnStateUpdate(EnemyController ec)

@@ -38,7 +38,6 @@ public class Room : MonoBehaviour
             }
         }
         RoomController.instance.RegisterRoom(this);
-        GenerateOrder();
     }
 
     public void RemoveUnconnectedDoors()
@@ -67,11 +66,6 @@ public class Room : MonoBehaviour
         }
     }
 
-    void GenerateOrder()
-    {
-        
-    }
-
     public Room GetRoomByDoor(int posX, int posY)
     {
         if (RoomController.instance.DoesRoomExist(X + posX, Y + posY))
@@ -98,10 +92,5 @@ public class Room : MonoBehaviour
         {
             RoomController.instance.OnPlayerEnterRoom(this);
         }
-    }
-
-    internal T[] GetComponensInChildren<T>()
-    {
-        throw new NotImplementedException();
     }
 }

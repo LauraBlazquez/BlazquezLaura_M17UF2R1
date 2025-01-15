@@ -2694,6 +2694,7 @@ GameObject:
   - component: {fileID: 4346433130150194225}
   - component: {fileID: 5809333579950452018}
   - component: {fileID: 1941478067855890996}
+  - component: {fileID: 1840571254864662198}
   m_Layer: 0
   m_Name: Shop
   m_TagString: Untagged
@@ -2778,6 +2779,20 @@ MonoBehaviour:
   down: {fileID: 0}
   right: {fileID: 0}
   doors: []
+--- !u!114 &1840571254864662198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748844804812135094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473d932a8cdfe7c4d8688823455c768d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 4725678032691832859}
+  spawnerData: []
 --- !u!1 &4913038092267174036
 GameObject:
   m_ObjectHideFlags: 0

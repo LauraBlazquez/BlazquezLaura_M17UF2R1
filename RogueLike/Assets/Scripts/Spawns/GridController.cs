@@ -18,7 +18,7 @@ public class GridController : MonoBehaviour
     {
         room = GetComponentInParent<Room>();
         grid.columns = room.Width;
-        grid.rows = room.Height - 5;
+        grid.rows = room.Height - 4;
         GenerateGrid();
     }
     public void GenerateGrid()

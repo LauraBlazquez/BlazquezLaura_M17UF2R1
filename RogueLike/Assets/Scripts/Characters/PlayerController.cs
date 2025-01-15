@@ -56,7 +56,6 @@ public class PlayerController : AEntity, ICollectable, InputControllers.IPlayerA
 
     void IsAsleep()
     {
-        Debug.Log(timer);
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle Blend Tree"))
         {
             timer += Time.deltaTime;
