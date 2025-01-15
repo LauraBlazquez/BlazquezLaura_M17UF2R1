@@ -7,16 +7,14 @@ public class PreSpawnState : StatesSO
 {
     public override void OnStateEnter(EnemyController ec)
     {
-        throw new System.NotImplementedException();
+        ec.animator.SetTrigger("Spawned");
     }
 
     public override void OnStateExit(EnemyController ec)
     {
-        throw new System.NotImplementedException();
     }
 
     public override void OnStateUpdate(EnemyController ec)
     {
-        throw new System.NotImplementedException();
     }
 }

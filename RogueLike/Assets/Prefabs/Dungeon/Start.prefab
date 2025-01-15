@@ -1822,6 +1822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1111807527807031590}
   - component: {fileID: 4725678032691832859}
+  - component: {fileID: 6985430761102400694}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -1865,6 +1866,20 @@ MonoBehaviour:
   gridTile: {fileID: 8032479168900106315, guid: e888c2c998da39846916ac9189b22034,
     type: 3}
   availablePoints: []
+--- !u!114 &6985430761102400694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995507854877984254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473d932a8cdfe7c4d8688823455c768d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 4725678032691832859}
+  spawnerData: []
 --- !u!1 &2021045593534276078
 GameObject:
   m_ObjectHideFlags: 0

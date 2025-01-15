@@ -16,7 +16,7 @@ public class RoomController : MonoBehaviour
 
     string currentWorldName = "Basement";
     RoomInfo currentLoadRoomData;
-    Room currentRoom;
+    public Room currentRoom;
     Queue<RoomInfo> loadRoomQueue = new Queue<RoomInfo>();
     public List<Room> loadedRooms = new List<Room> ();
     bool isLoadingRoom = false;
@@ -98,7 +98,7 @@ public class RoomController : MonoBehaviour
 
     public bool DoesRoomExist(int x, int y)
     {
-        return loadedRooms.Find(item => item.X == x && item.Y == y) != null;
+        return loadedRooms.Find(item => item.X == x && item.Y == y);
     }
 
     public Room FindRoom(int x, int y)
@@ -111,7 +111,6 @@ public class RoomController : MonoBehaviour
         //Se deben poner todos los prefabs de salas que generes en total
         string[] possibleRooms = new string[]
         {
-            "Start",
             "Room",
             "Shop"             
         };
