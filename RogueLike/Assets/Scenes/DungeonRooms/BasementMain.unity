@@ -242,6 +242,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sunflower
       objectReference: {fileID: 0}
+    - target: {fileID: 2275004780580243926, guid: 08d8e70ab722f974884530b3c801b1f6,
+        type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990104768464279180, guid: 08d8e70ab722f974884530b3c801b1f6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990104768464279180, guid: 08d8e70ab722f974884530b3c801b1f6,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5657409086002677584, guid: 08d8e70ab722f974884530b3c801b1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -705,6 +720,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2252169532581320962, guid: c626601d68149b54c9a6cb73111d0312,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291048445665310463, guid: c626601d68149b54c9a6cb73111d0312,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291048445665310463, guid: c626601d68149b54c9a6cb73111d0312,
+        type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812719844470950369, guid: c626601d68149b54c9a6cb73111d0312,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812719844470950369, guid: c626601d68149b54c9a6cb73111d0312,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256829630391206873, guid: c626601d68149b54c9a6cb73111d0312,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182815417197113944, guid: c626601d68149b54c9a6cb73111d0312,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 787357970}
     - target: {fileID: 7890193705207119893, guid: c626601d68149b54c9a6cb73111d0312,
         type: 3}
       propertyPath: m_Name
@@ -780,6 +830,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c626601d68149b54c9a6cb73111d0312, type: 3}
+--- !u!95 &787357970 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7465648182483273482, guid: c626601d68149b54c9a6cb73111d0312,
+    type: 3}
+  m_PrefabInstance: {fileID: 787357969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1082747233
 GameObject:
   m_ObjectHideFlags: 0
