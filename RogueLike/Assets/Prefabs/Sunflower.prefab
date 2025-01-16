@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 5657409086002677584}
   - component: {fileID: 8449157676418729385}
   - component: {fileID: -3967492245136828876}
-  - component: {fileID: 1893152692440717090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sunflower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,19 +131,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0001, y: 0.0001}
   m_EdgeRadius: 0
---- !u!114 &1893152692440717090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172244869063748076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e68d9139869fb61488e3bb8876ea87de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
 --- !u!1 &247953156088590161
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6623097760235380000}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +178,7 @@ GameObject:
   - component: {fileID: 5203318519450783154}
   - component: {fileID: 4326379868956610858}
   - component: {fileID: 8316079221953333503}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083859713844774840}
   - component: {fileID: 7514544674768757213}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +343,7 @@ GameObject:
   - component: {fileID: 2275004780580243926}
   - component: {fileID: 5996033310879327638}
   - component: {fileID: 2938350261330784905}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +444,7 @@ GameObject:
   - component: {fileID: 4990104768464279180}
   - component: {fileID: 7092741992093834754}
   - component: {fileID: 898318856067625097}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3291048445665310463}
   - component: {fileID: 102166621762627155}
   - component: {fileID: 164491688670738025}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 4812719844470950369}
   - component: {fileID: 515407060792202174}
   - component: {fileID: 2765097496688978350}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 7782316741935494041}
   - component: {fileID: 6418158829961177100}
   - component: {fileID: 2093979454325606459}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7458929425338271788}
   - component: {fileID: 6044700648547506819}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,8 @@ GameObject:
   - component: {fileID: 6436090139175779690}
   - component: {fileID: 7465648182483273482}
   - component: {fileID: 7182815417197113944}
-  m_Layer: 0
+  - component: {fileID: -167939286393013925}
+  m_Layer: 6
   m_Name: Mushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +458,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6375009971345499609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -571,7 +572,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68d9139869fb61488e3bb8876ea87de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentState: {fileID: 11400000, guid: 3b60eef327d91454baac16941f83e99f, type: 2}
+  HP: 100
+  target: {fileID: 5948452183760678747, guid: 3584d28d26b87c2459bfff61b64fe3a1, type: 3}
   animator: {fileID: 0}
+--- !u!114 &-167939286393013925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890193705207119893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019d0804760034a41bced346fecdf230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2.51
 --- !u!1 &8090487967599081212
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2252169532581320962}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
