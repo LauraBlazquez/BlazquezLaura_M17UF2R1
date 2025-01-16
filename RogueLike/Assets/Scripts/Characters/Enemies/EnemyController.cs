@@ -16,17 +16,15 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if(collision.tag == "Player")
         {
-            target = collision.gameObject;
+            GoToState<ChaseState>();
         }
-        GoToState<ChaseState>();
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         GoToState<IdleState>();
-        target = null;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -56,9 +54,9 @@ public class EnemyController : MonoBehaviour
     {
         if (CurrentState.statesToGo.Find(StatesSO => StatesSO is T))
         {
-            CurrentState.OnStateExit(this);
-            CurrentState = CurrentState.statesToGo.Find(obj => obj is T);
             CurrentState.OnStateEnter(this);
+            CurrentState = CurrentState.statesToGo.Find(obj => obj is T);
+            CurrentState.OnStateExit(this);
         }
     }
 }
