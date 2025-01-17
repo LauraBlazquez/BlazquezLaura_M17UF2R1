@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 9173985713668757525}
   - component: {fileID: 569356476449505245}
   - component: {fileID: 1884636781688540363}
+  - component: {fileID: 3129938846904573896}
   m_Layer: 20
   m_Name: ExitLeft
   m_TagString: Untagged
@@ -493,6 +494,19 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &3129938846904573896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855735644869268115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f467144a24da84741a0344177eaadd81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorType: 1
 --- !u!1 &1209477010086648397
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +519,7 @@ GameObject:
   - component: {fileID: 6234796058374286420}
   - component: {fileID: 6058642713497832612}
   - component: {fileID: 4783025216094382339}
+  - component: {fileID: 4866125337857606705}
   m_Layer: 20
   m_Name: ExitDown
   m_TagString: Untagged
@@ -876,6 +891,19 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &4866125337857606705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209477010086648397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f467144a24da84741a0344177eaadd81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorType: 2
 --- !u!1 &1369894516107800655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,7 +2806,6 @@ MonoBehaviour:
   left: {fileID: 0}
   down: {fileID: 0}
   right: {fileID: 0}
-  doors: []
 --- !u!114 &1840571254864662198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4307,6 +4334,7 @@ GameObject:
   - component: {fileID: 146468020119070679}
   - component: {fileID: 1321681628682537031}
   - component: {fileID: 1143867158935536493}
+  - component: {fileID: 3063366527052337567}
   m_Layer: 20
   m_Name: ExitUp
   m_TagString: Untagged
@@ -4679,6 +4707,19 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &3063366527052337567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6716449487314419219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f467144a24da84741a0344177eaadd81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorType: 0
 --- !u!1 &6743398130344723173
 GameObject:
   m_ObjectHideFlags: 0
@@ -4691,6 +4732,7 @@ GameObject:
   - component: {fileID: 5972505842615621368}
   - component: {fileID: 2910974926294436812}
   - component: {fileID: 8768138617909501189}
+  - component: {fileID: 5334189271893427490}
   m_Layer: 20
   m_Name: ExitRight
   m_TagString: Untagged
@@ -5042,6 +5084,19 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &5334189271893427490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743398130344723173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f467144a24da84741a0344177eaadd81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorType: 3
 --- !u!1 &7441261454186328477
 GameObject:
   m_ObjectHideFlags: 0

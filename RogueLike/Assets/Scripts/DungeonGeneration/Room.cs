@@ -8,7 +8,7 @@ public class Room : MonoBehaviour
     public int Width, Height, X, Y;
     public Door up, left, down, right;
     private List<Flower> order = new List<Flower>();
-    public List<Door> doors = new List<Door>();
+    List<Door> doors = new List<Door>();
 
     void Start()
     {
@@ -42,9 +42,9 @@ public class Room : MonoBehaviour
 
     public void RemoveUnconnectedDoors()
     {
+        int posX, posY;
         foreach (Door door in doors)
         {
-            int posX, posY;
             posX = posY = 0;
             switch (door.doorType)
             {

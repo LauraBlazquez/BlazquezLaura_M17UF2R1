@@ -13,13 +13,12 @@ public class DungeonGenerator : MonoBehaviour
         SpawnRooms(dungeonRooms);
     }
 
-    //Pendiente de revisar para coheréncia entre salas según Tilemap
     private void SpawnRooms(IEnumerable<Vector2Int> rooms)
     {
         RoomController.instance.LoadRoom("Start", 0, 0);
         foreach(Vector2Int roomLocation in rooms)
         {
-            RoomController.instance.LoadRoom(RoomController.instance.GetRandomRoomName(), roomLocation.x, roomLocation.y);
+            RoomController.instance.LoadRoom(RoomController.instance.GetRandomRoomName(), roomLocation.x, roomLocation.y);            
         }
     }
 }
