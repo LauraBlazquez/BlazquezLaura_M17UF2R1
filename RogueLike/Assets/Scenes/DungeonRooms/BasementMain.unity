@@ -358,6 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dungeonGenerationData: {fileID: 11400000, guid: 69e6bd4d15cee8940ab3dba1783e49e0,
     type: 2}
+  roomController: {fileID: 1290296037}
 --- !u!1001 &33431999582625049
 PrefabInstance:
   m_ObjectHideFlags: 0

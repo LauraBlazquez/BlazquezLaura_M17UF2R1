@@ -61,6 +61,7 @@ public class Room : MonoBehaviour
                     posX = 1;
                     break;
             }
+            Debug.Log("Cerramos puertas sala a sala");
             if (GetRoomByDoor(posX, posY) == null)
                 door.gameObject.SetActive(false);
         }
@@ -70,8 +71,10 @@ public class Room : MonoBehaviour
     {
         if (RoomController.instance.DoesRoomExist(X + posX, Y + posY))
         {
+            Debug.Log("La sala existe");
             return RoomController.instance.FindRoom(X + posX, Y + posY);
         }
+        Debug.Log("La sala no existe, pasamos a la siguiente");
         return null;
     }
 

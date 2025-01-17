@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea3941b35e5f7354b918b4e32a5b1fa9, type: 3}
-  m_Name: Sunflower
+  m_Name: SeedsBag
   m_EditorClassIdentifier: 
-  itemToSpawn: {fileID: 172244869063748076, guid: 08d8e70ab722f974884530b3c801b1f6,
+  itemToSpawn: {fileID: 6834805198961216535, guid: 78ef4e6188403c8438f809c19d835856,
     type: 3}
   minSpawn: 3
   maxSpawn: 8
