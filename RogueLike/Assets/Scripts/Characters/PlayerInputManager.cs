@@ -21,11 +21,11 @@ public class PlayerInputManager : MonoBehaviour, InputControllers.IPlayerActions
     }
     public void OnMovement(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+
     }
 
     public void OnNewaction(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+
     }
 }

@@ -13,6 +13,7 @@ public enum Direction
 public class DungeonCrawlerController : MonoBehaviour
 {
     public static List<Vector2Int> positionsVisited = new List<Vector2Int>();
+    public RoomController roomController;
     private static readonly Dictionary<Direction, Vector2Int> directionMovementMap = new Dictionary<Direction, Vector2Int>
     {
         {Direction.up, Vector2Int.up},
@@ -40,5 +41,11 @@ public class DungeonCrawlerController : MonoBehaviour
             }
         }
         return positionsVisited;
+    }
+
+    public void CleanDoors()
+    {
+        Debug.Log("Vamos a cerrar las puertas");
+        roomController.CloseUnconnectedDoors();
     }
 }

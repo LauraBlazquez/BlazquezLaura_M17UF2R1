@@ -91,12 +91,20 @@ public class RoomController : MonoBehaviour
                 CameraController.instance.currentRoom = room;
             }
             loadedRooms.Add(room);
-            room.RemoveUnconnectedDoors();
         }
         else
         {
             Destroy(room.gameObject);
             isLoadingRoom = false;
+        }
+    }
+
+    public void CloseUnconnectedDoors()
+    {
+        foreach (Room room in loadedRooms)
+        {
+            Debug.Log("Recorremos la lista de salas");
+            room.RemoveUnconnectedDoors();
         }
     }
 
