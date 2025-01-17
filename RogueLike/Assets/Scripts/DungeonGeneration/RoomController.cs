@@ -20,6 +20,7 @@ public class RoomController : MonoBehaviour
     Queue<RoomInfo> loadRoomQueue = new Queue<RoomInfo>();
     public List<Room> loadedRooms = new List<Room> ();
     bool isLoadingRoom = false;
+    bool isShopLoaded = false;
     
 
     void Awake()
@@ -57,7 +58,10 @@ public class RoomController : MonoBehaviour
         newRoomData.name = name;
         newRoomData.X = x;
         newRoomData.Y = y;
-
+        if(newRoomData.name == "Shop")
+        {
+            isShopLoaded = true;
+        }
         loadRoomQueue.Enqueue (newRoomData);
     }
 
@@ -108,13 +112,16 @@ public class RoomController : MonoBehaviour
 
     public string GetRandomRoomName()
     {
-        //Se deben poner todos los prefabs de salas que generes en total
-        string[] possibleRooms = new string[]
+        List<string> possibleRooms = new List<string>
         {
             "Room",
             "Shop"             
         };
-        return possibleRooms[Random.Range(0, possibleRooms.Length)];
+        if (isShopLoaded)
+        {
+            possibleRooms.Remove("Shop");
+        }
+        return possibleRooms[Random.Range(0, possibleRooms.Count)];
     }
 
     public void OnPlayerEnterRoom(Room room)
