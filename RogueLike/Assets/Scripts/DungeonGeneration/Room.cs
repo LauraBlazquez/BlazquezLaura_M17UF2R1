@@ -1,7 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class Room : MonoBehaviour
 {
@@ -23,16 +22,16 @@ public class Room : MonoBehaviour
             doors.Add(d);
             switch (d.doorType)
             {
-                case Door.DoorType.up:
+                case DoorType.up:
                     up = d; 
                 break;
-                case Door.DoorType.left:
+                case DoorType.left:
                     left = d;
                 break;
-                case Door.DoorType.down:
+                case DoorType.down:
                     down = d;
                 break;
-                case Door.DoorType.right:
+                case DoorType.right:
                     right = d;
                 break;
             }
@@ -42,40 +41,52 @@ public class Room : MonoBehaviour
 
     public void RemoveUnconnectedDoors()
     {
-        int posX, posY;
         foreach (Door door in doors)
         {
-            posX = posY = 0;
             switch (door.doorType)
             {
-                case Door.DoorType.up:
-                    posY = 1;
+                case DoorType.up:
+                    door.gameObject.SetActive(GetTop() == null);
                     break;
-                case Door.DoorType.left:
-                    posX = -1;
+                case DoorType.right:
+                    door.gameObject.SetActive(GetRight() == null);
                     break;
-                case Door.DoorType.down:
-                    posY = -1;
+                case DoorType.down:
+                    door.gameObject.SetActive(GetBottom() == null);
                     break;
-                case Door.DoorType.right:
-                    posX = 1;
+                case DoorType.left:
+                    door.gameObject.SetActive(GetLeft() == null);
                     break;
             }
-            Debug.Log("Cerramos puertas sala a sala");
-            if (GetRoomByDoor(posX, posY) == null)
-                door.gameObject.SetActive(false);
         }
     }
 
-    public Room GetRoomByDoor(int posX, int posY)
+    public Room GetRight()
     {
-        if (RoomController.instance.DoesRoomExist(X + posX, Y + posY))
-        {
-            Debug.Log("La sala existe");
-            return RoomController.instance.FindRoom(X + posX, Y + posY);
-        }
-        Debug.Log("La sala no existe, pasamos a la siguiente");
-        return null;
+        return RoomController.instance.DoesRoomExist(X + 1, Y)
+            ? RoomController.instance.FindRoom(X + 1, Y)
+            : null;
+    }
+
+    public Room GetLeft()
+    {
+        return RoomController.instance.DoesRoomExist(X - 1, Y)
+            ? RoomController.instance.FindRoom(X - 1, Y)
+            : null;
+    }
+
+    public Room GetTop()
+    {
+        return RoomController.instance.DoesRoomExist(X, Y + 1)
+            ? RoomController.instance.FindRoom(X, Y + 1)
+            : null;
+    }
+
+    public Room GetBottom()
+    {
+        return RoomController.instance.DoesRoomExist(X, Y - 1)
+            ? RoomController.instance.FindRoom(X, Y - 1)
+            : null;
     }
 
     void OnDrawGizmos()
@@ -89,9 +100,9 @@ public class Room : MonoBehaviour
         return new Vector3(X * Width, Y * Height);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.tag == "Player")
+        if(collision.tag == "Player")
         {
             RoomController.instance.OnPlayerEnterRoom(this);
         }

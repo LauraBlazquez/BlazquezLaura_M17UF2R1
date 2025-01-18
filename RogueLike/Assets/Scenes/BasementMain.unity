@@ -358,7 +358,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dungeonGenerationData: {fileID: 11400000, guid: 69e6bd4d15cee8940ab3dba1783e49e0,
     type: 2}
-  roomController: {fileID: 1290296037}
 --- !u!1001 &33431999582625049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -435,12 +434,12 @@ PrefabInstance:
     - target: {fileID: 2077176449413475064, guid: 3584d28d26b87c2459bfff61b64fe3a1,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.18427889
+      value: 0.19140056
       objectReference: {fileID: 0}
     - target: {fileID: 2077176449413475064, guid: 3584d28d26b87c2459bfff61b64fe3a1,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.13995223
+      value: 0.1426737
       objectReference: {fileID: 0}
     - target: {fileID: 2077176449413475064, guid: 3584d28d26b87c2459bfff61b64fe3a1,
         type: 3}
@@ -450,12 +449,12 @@ PrefabInstance:
     - target: {fileID: 2077176449413475064, guid: 3584d28d26b87c2459bfff61b64fe3a1,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.0014289245
+      value: -0.001373902
       objectReference: {fileID: 0}
     - target: {fileID: 2077176449413475064, guid: 3584d28d26b87c2459bfff61b64fe3a1,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.09002388
+      value: -0.10083072
       objectReference: {fileID: 0}
     - target: {fileID: 5948452183760678747, guid: 3584d28d26b87c2459bfff61b64fe3a1,
         type: 3}
@@ -544,7 +543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8537479790687373431}
   - component: {fileID: 699069117342977453}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Grid8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +650,7 @@ Transform:
   m_GameObject: {fileID: 4442868095379492948}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 249.1, y: 167, z: -3112.753}
+  m_LocalPosition: {x: 249.1, y: 142, z: -3112.753}
   m_LocalScale: {x: 11.353596, y: 11.353596, z: 11.353596}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -669,7 +668,7 @@ GameObject:
   - component: {fileID: 4957793756914874088}
   - component: {fileID: 4429686612556321537}
   - component: {fileID: 2925603563088383903}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Heart (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,7 +801,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3980929375376024951}
   - component: {fileID: 4045804918758367418}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Grid5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +861,7 @@ Transform:
   m_GameObject: {fileID: 7020420412719345114}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -209, y: 167, z: 0}
+  m_LocalPosition: {x: -209, y: 144, z: 0}
   m_LocalScale: {x: 185, y: 185, z: 185}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -877,7 +876,7 @@ Transform:
   m_GameObject: {fileID: 7267326485183800147}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -279, y: 167, z: 0}
+  m_LocalPosition: {x: -279, y: 144, z: 0}
   m_LocalScale: {x: 185, y: 185, z: 185}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1016,7 +1015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7348199834020266709}
   - component: {fileID: 4012992923161144483}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Grid3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,7 +1151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2513026267045125333}
   - component: {fileID: 5747129447641677629}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Grid6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1273,7 +1272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 979033593807451236}
   - component: {fileID: 3803483109787032867}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1318,7 +1317,7 @@ Transform:
   m_GameObject: {fileID: 1086345797963236545}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -244, y: 167, z: 0}
+  m_LocalPosition: {x: -244, y: 144, z: 0}
   m_LocalScale: {x: 185, y: 185, z: 185}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1378,7 +1377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1179748740114727981}
   - component: {fileID: 181115595459081951}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Grid1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1447,7 +1446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6962493192882335039}
   - component: {fileID: 3745310475109567849}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Grid4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1478,7 +1477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: -135.3}
+  m_AnchoredPosition: {x: -4, y: -107}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &5982920045429717530
@@ -1628,7 +1627,7 @@ GameObject:
   - component: {fileID: 3076923588982382579}
   - component: {fileID: 5982920045429717530}
   - component: {fileID: 5109094515887564420}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Heart (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1953349814348101164}
   - component: {fileID: 4182453742047581112}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Grid2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1681,7 +1680,7 @@ GameObject:
   - component: {fileID: 3387934489760108922}
   - component: {fileID: 6246681598394397843}
   - component: {fileID: 4850402777953560589}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1801,7 +1800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5857944831534904071}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1818,7 +1817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918945635523756557}
   - component: {fileID: 1707787241513309137}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Grid7
   m_TagString: Untagged
   m_Icon: {fileID: 0}

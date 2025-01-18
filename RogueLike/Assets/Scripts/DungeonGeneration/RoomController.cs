@@ -3,17 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RoomInfo
-{
-    public string name;
-    public int X;
-    public int Y;
-}
-
 public class RoomController : MonoBehaviour
 {
     public static RoomController instance;
-
     string currentWorldName = "Basement";
     RoomInfo currentLoadRoomData;
     public Room currentRoom;
@@ -21,7 +13,7 @@ public class RoomController : MonoBehaviour
     public List<Room> loadedRooms = new List<Room> ();
     bool isLoadingRoom = false;
     bool isShopLoaded = false;
-    
+    bool updatedRooms = false;
 
     void Awake()
     {
@@ -35,12 +27,17 @@ public class RoomController : MonoBehaviour
 
     void UpdateRoomQueue()
     {
-        if (isLoadingRoom)
-        {
-            return;
-        }
+        if (isLoadingRoom) return;
         if (loadRoomQueue.Count == 0)
         {
+            if (!updatedRooms)
+            {
+                foreach (Room room in loadedRooms)
+                {
+                    room.RemoveUnconnectedDoors();
+                }
+                updatedRooms = true;
+            }
             return;
         }
         currentLoadRoomData = loadRoomQueue.Dequeue();
@@ -84,7 +81,6 @@ public class RoomController : MonoBehaviour
             room.Y = currentLoadRoomData.Y;
             room.name = currentWorldName + "-" + currentLoadRoomData.name + " " + room.X + ", " + room.Y;
             room.transform.parent = transform;
-
             isLoadingRoom = false;
             if (loadedRooms.Count == 0)
             {
@@ -96,15 +92,6 @@ public class RoomController : MonoBehaviour
         {
             Destroy(room.gameObject);
             isLoadingRoom = false;
-        }
-    }
-
-    public void CloseUnconnectedDoors()
-    {
-        foreach (Room room in loadedRooms)
-        {
-            Debug.Log("Recorremos la lista de salas");
-            room.RemoveUnconnectedDoors();
         }
     }
 

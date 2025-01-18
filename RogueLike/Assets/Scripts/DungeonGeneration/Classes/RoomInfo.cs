@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class RoomInfo
 {
-    public DoorType doorType;
+    public string name;
+    public int X;
+    public int Y;
 }

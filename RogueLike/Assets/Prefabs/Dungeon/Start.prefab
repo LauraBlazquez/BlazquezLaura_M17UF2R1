@@ -1397,7 +1397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f467144a24da84741a0344177eaadd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 1
+  doorType: 0
 --- !u!1 &1730923569171626250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,7 +2286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f467144a24da84741a0344177eaadd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 3
+  doorType: 1
 --- !u!1 &3496577732983560421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,8 +2511,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9221754168791028081}
   - component: {fileID: 4346433130150194225}
-  - component: {fileID: 5809333579950452018}
   - component: {fileID: 1941478067855890996}
+  - component: {fileID: 4068169557189622038}
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
@@ -2551,27 +2551,6 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!65 &5809333579950452018
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3748844804812135094}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 17.772003, y: 11.211983, z: 1}
-  m_Center: {x: 0, y: -0.06762862, z: 0}
 --- !u!114 &1941478067855890996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2592,6 +2571,51 @@ MonoBehaviour:
   left: {fileID: 0}
   down: {fileID: 0}
   right: {fileID: 0}
+--- !u!61 &4068169557189622038
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748844804812135094}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08356285, y: -0.041781187}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.963177, y: 11.94668}
+  m_EdgeRadius: 0
 --- !u!1 &3985707857622342810
 GameObject:
   m_ObjectHideFlags: 0
@@ -8315,7 +8339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f467144a24da84741a0344177eaadd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 2
+  doorType: 3
 --- !u!1 &7935941211143321851
 GameObject:
   m_ObjectHideFlags: 0
@@ -10160,7 +10184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f467144a24da84741a0344177eaadd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 2
 --- !u!1 &8475697437061465289
 GameObject:
   m_ObjectHideFlags: 0
