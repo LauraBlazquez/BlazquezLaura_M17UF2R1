@@ -5,12 +5,6 @@ using UnityEngine;
 public class GridController : MonoBehaviour
 {
     public Room room;
-    [System.Serializable]
-    public struct Grid
-    {
-        public int columns, rows;
-        public float verticalOffset, horizontalOffset;
-    }
     public Grid grid;
     public GameObject gridTile;
     public List<Vector2> availablePoints = new List<Vector2>();
