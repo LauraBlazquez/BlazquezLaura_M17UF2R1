@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Weapon : MonoBehaviour
+[CreateAssetMenu (fileName = "Weapon", menuName = "Objects/Weapon")]
+public class Weapon : ScriptableObject
 {
     public float damage;
     public float speed;
-    public float distanceRang;
+    public float cooldown;
+    public Sprite photo;
+    public float price;
 }

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IDropeable
 {
-    public void Drop();
+
 }

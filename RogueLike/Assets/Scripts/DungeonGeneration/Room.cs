@@ -6,7 +6,6 @@ public class Room : MonoBehaviour
 {
     public int Width, Height, X, Y;
     public Door up, left, down, right;
-    private List<Flower> order = new List<Flower>();
     List<Door> doors = new List<Door>();
 
     void Start()
