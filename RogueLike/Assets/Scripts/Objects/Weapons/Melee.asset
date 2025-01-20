@@ -15,5 +15,5 @@ MonoBehaviour:
   damage: 25
   speed: 10
   cooldown: 0
-  photo: {fileID: 1343100924, guid: 79d432c7afaaef64db9c2f4ad58b0f16, type: 3}
+  prefab: {fileID: 7427155331478357603, guid: 43cdc968863035746af89fef1a315e96, type: 3}
   price: 0

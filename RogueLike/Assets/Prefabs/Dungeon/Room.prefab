@@ -930,7 +930,7 @@ MonoBehaviour:
   spawnerData:
   - name: Mushroom
     spawnerData: {fileID: 11400000, guid: 0e81830744957454784cdee5e46bba82, type: 2}
-  - name: Sunflower
+  - name: LanzaPipas
     spawnerData: {fileID: 11400000, guid: 9962e74dca965414da1ed32836f96c32, type: 2}
 --- !u!61 &585529490770329267
 BoxCollider2D:

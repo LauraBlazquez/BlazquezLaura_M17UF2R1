@@ -7,6 +7,6 @@ public class Weapon : ScriptableObject
     public float damage;
     public float speed;
     public float cooldown;
-    public Sprite photo;
+    public GameObject prefab;
     public float price;
 }
